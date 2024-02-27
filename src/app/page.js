@@ -8,6 +8,8 @@ import AlsoLike from "./Components/AlsoLike";
 import TrendingCoins from "./Components/TrendingCoins"; // Uncomment if needed
 import About from './Components/About';
 import Sentiment from './Components/Sentiment';
+import Performance from './Components/Performance';
+
 export default function Home() {
   return (
     <div className="w-full">
@@ -15,6 +17,7 @@ export default function Home() {
         {/* Left Column */}
         <div className="ml-3 mr-3 lg:w-11/12">
           <Bitcoin />
+          <Performance/>
           <Sentiment/>
           <About />
           <Tokenomics />
