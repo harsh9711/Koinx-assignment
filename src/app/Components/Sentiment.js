@@ -40,8 +40,8 @@ const createRadarGraph = (labels, data, backgroundColor, borderColor, pointBackg
 
 const ProfileCard = ({ name, description, iconColor, boxColor }) => {
     const iconStyle = {
-        color: iconColor || "blue", // Default to blue if no color is provided
-        backgroundColor: boxColor || "bg-blue-100", // Default to blue background if no color is provided
+        color: iconColor || "blue",
+        backgroundColor: boxColor || "bg-blue-100",
     };
 
     return (
@@ -50,7 +50,7 @@ const ProfileCard = ({ name, description, iconColor, boxColor }) => {
                 <div className={`absolute top-0 left-0 mt-2 ml-2 w-12 h-12 rounded-full flex items-center justify-center ${iconStyle.backgroundColor}`}>
                     <BsGraphUpArrow size={20} style={{ color: "black" }} />
                 </div>
-                <div className="flex flex-col gap-4 ml-16"> {/* Adjust the ml value based on your preference */}
+                <div className="flex flex-col gap-4 ml-16">
                     <h2 className='text-lg w-full'>{name}</h2>
                     <p className='text-sm w-full'>{description}</p>
                 </div>
@@ -59,7 +59,6 @@ const ProfileCard = ({ name, description, iconColor, boxColor }) => {
         </div>
     );
 };
-
 
 const Sentiment = () => {
     const labels = ['Underlying Technology', 'Roadmap & Progress', 'Team, Partners & Investors', 'Token Performance', 'Ecosystem Development'];
@@ -90,7 +89,7 @@ const Sentiment = () => {
                     description="Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet nec neque sed pellentesque viverra. Consectetur proin amet ut id facilisi quis consectetur. Tellus gravida ultricies feugiat sed eu egestas dolor est ipsum."
                 />
             </div>
-            <div className="mt-4 px-6 py-4  w-10/12">
+            <div className="mt-4 px-6 py-4 w-10/12">
                 <h2 className="text-lg font-bold mb-2">Analyst Estimates</h2>
                 <div className='flex flex-row gap-10 items-center justify-start'>
                     <div className="flex justify-center items-center h-48 w-48 rounded-full bg-green-100 text-green-500 text-2xl font-bold">
@@ -121,18 +120,16 @@ const Sentiment = () => {
                     </div>
                 </div>
                 <div className="ml-4 w-full border-t border-gray-300 my-4 mt-9"></div>
-
             </div>
-            <div className='mt-4 px-6 py-4  w-10/12'>
-            <div className='flex flex-col gap-6'>
-                <div className="font-inter text-lg font-semibold leading-5">
-                    <h2>Rating</h2>
-                </div>
+            <div className='mt-4 px-6 py-4 w-10/12'>
+                <div className='flex flex-col gap-6'>
+                    <div className="font-inter text-lg font-semibold leading-5">
+                        <h2>Rating</h2>
+                    </div>
                     <div className='flex flex-row font-inter text-lg font-semibold leading-5 justify-between'>
                         <div>
                             <h2 className='mt-3'>Rating Breakdown: 79.83<span className="text-gray-500">/100</span></h2>
                         </div>
-
                         <div className='flex flex-row gap-4 items-center'>
                             <div>
                                 <h2 className='text-4xl text-green-500'>AAA</h2>
@@ -142,10 +139,8 @@ const Sentiment = () => {
                             </div>
                         </div>
                     </div>
-
+                </div>
             </div>
-            </div>
-
             <div className="w-full p-4">
                 {createRadarGraph(
                     labels,
@@ -158,11 +153,8 @@ const Sentiment = () => {
                     pointHoverBorderColor
                 )}
             </div>
-
         </div>
     );
 };
 
-
-
-export default Sentiment
+export default Sentiment;

@@ -13,7 +13,7 @@ const TrendingCoins = () => {
         const fetchTrendingCoins = async () => {
             try {
                 const response = await axios.get('https://api.coingecko.com/api/v3/search/trending');
-                setTrendingCoins(response.data.coins.slice(9, 100)); // Limiting to top 20 trending coins
+                setTrendingCoins(response.data.coins.slice(9, 100));
             } catch (error) {
                 console.error('Error fetching trending coins:', error);
             }

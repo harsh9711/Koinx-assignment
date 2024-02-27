@@ -20,7 +20,7 @@ const TrendingCoin = () => {
             // Set the update frequency
             const updateFreqPercentage = topThreeCoins.map(coin => ({
                 ...coin,
-                market_cap_percentage: coin.item.market_cap_rank + "%"
+                market_cap_percentage: `${coin.item.market_cap_rank}%`
             }));
             setUpdateFrequency(updateFreqPercentage);
         } catch (error) {
@@ -29,7 +29,7 @@ const TrendingCoin = () => {
     };
 
     return (
-        <div className="lg:ml-3 w-full lg:w-11/12  border border-gray-200 rounded-md p-4 bg-white">
+        <div className="lg:ml-3 w-full lg:w-11/12 border border-gray-200 rounded-md p-4 bg-white">
             <h2 className="text-lg font-bold mb-4">Trending Coins (24h)</h2>
             {topCoins.map((coin, index) => (
                 <div key={index} className="flex flex-col lg:flex-row items-center justify-between mb-4">

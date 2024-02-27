@@ -7,18 +7,18 @@ import profilePic3 from '/public/assets/5.jpg';
 
 const ProfileCard = ({ profilePic, name, description }) => {
     return (
-        <div className='bg-blue-100 flex flex-col lg:flex-row justify-between gap-2 items-center  lg:w-11/12 rounded-xl mb-5'>
+        <div className='bg-blue-100 flex flex-col lg:flex-row justify-between gap-2 items-center lg:w-11/12 rounded-xl mb-5'>
             <div className='flex flex-col lg:flex-col items-center lg:items-start ml-4'>
                 <Image
                     src={profilePic}
-                    alt="Picture of the author"
+                    alt="Profile Picture"
                     width={80}
                     height={80}
                     className="rounded-lg lg:mr-4 ml-3 mt-4"
                 />
                 <div className="flex flex-col items-center lg:items-start">
                     <h2 className='text-lg truncate font-inter font-semibold leading-6 text-center lg:text-left'>{name}</h2>
-                    <h7 className='text-xs text-gray-700 font-inter font-medium leading-5 text-center lg:text-left'>Designation here</h7>
+                    <h7 className='text-xs text-gray-700 font-inter font-medium leading-5 text-center lg:text-left'>Designation</h7>
                 </div>
             </div>
             <div className="mt-4 lg:mt-0">
