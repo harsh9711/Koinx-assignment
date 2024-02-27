@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import PriceChangeChart from "../Components/price";
 import Graph from "../Components/Graph"
 const Bitcoin = () => {
     return (

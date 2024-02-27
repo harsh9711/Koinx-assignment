@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import PriceChangeChart from '../Components/price';
-
+import axios from 'axios';
 function App() {
   const [trendingCoins, setTrendingCoins] = useState([]);
 

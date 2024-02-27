@@ -1,7 +1,5 @@
 "use client"
 import React from 'react'
-import Image from 'next/image';
-import { IoMail } from "react-icons";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { Radar } from 'react-chartjs-2';
 
