@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import { IoIosArrowRoundForward } from "react-icons/io";
-import profilePic1 from '/Users/harshsahcdeva/Desktop/projects/koinx/public/assets/5c577ca47c764bd8af01d840fe7ffccb.jpeg';
-import profilePic2 from "/Users/harshsahcdeva/Desktop/projects/koinx/public/assets/e39cee97d83ba894aa0c105133924b9b.jpeg";
+import profilePic1 from '/public/assets/2.jpg';
+import profilePic2 from '/public/assets/4.jpg';
 const ProfileCard = ({ profilePic, colors, name, description }) => {
     return (
         <div className={`flex flex-col lg:flex-row rounded-xl ${colors}`}>

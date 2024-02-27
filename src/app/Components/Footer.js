@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import photo1 from "/Users/harshsahcdeva/Desktop/projects/koinx/public/assets/cryptologo.jpg"
+import photo1 from '/public/assets/8.jpg'
 import { footerLinkData, footerLinksImageData } from '/Users/harshsahcdeva/Desktop/projects/koinx/src/app/constants'
 
 const Footer = () => {

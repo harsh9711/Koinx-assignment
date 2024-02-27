@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 
-import profilePic1 from '/Users/harshsahcdeva/Desktop/projects/koinx/public/assets/51oTVlqzzLL._AC_UF1000,1000_QL80_.jpg';
-import profilePic2 from "/Users/harshsahcdeva/Desktop/projects/koinx/public/assets/6b7ed698713c09ad9e6afc7dcb996a09.jpg";
-import profilePic3 from "/Users/harshsahcdeva/Desktop/projects/koinx/public/assets/istockphoto-615279718-612x612.jpg";
+import profilePic1 from '/public/assets/9.jpg';
+import profilePic2 from '/public/assets/3.jpg';
+import profilePic3 from '/public/assets/5.jpg';
 
 const ProfileCard = ({ profilePic, name, description }) => {
     return (

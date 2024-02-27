@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import photo1 from "/Users/harshsahcdeva/Desktop/projects/koinx/public/assets/Screenshot 2024-02-26 at 3.30.49 PM.png";
+import photo1 from "/public/assets/1.jpg";
 
 const Tokenomics = () => {
     return (
